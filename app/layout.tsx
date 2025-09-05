@@ -6,11 +6,11 @@ import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: {
-    default: 'LiveKit Meet | Conference app build with LiveKit open source',
+    default: 'JustSocial Meet | Conference app build with LiveKit open source',
     template: '%s',
   },
   description:
-    'LiveKit is an open source WebRTC project that gives you everything needed to build scalable and real-time audio and/or video experiences in your applications.',
+    'JustSocial Meet is an open source WebRTC project that gives you everything needed to build scalable and real-time audio and/or video experiences in your applications.',
   twitter: {
     creator: '@livekitted',
     site: '@livekitted',
