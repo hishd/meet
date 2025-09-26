@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   },
   openGraph: {
-    url: 'https://meet.livekit.io',
+    url: 'https://meet.justsocial.chat',
     images: [
       {
-        url: 'https://meet.livekit.io/images/livekit-meet-open-graph.png',
+        url: 'https://advagroup.com.au/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FLocations.fc2e14fe.jpg&w=3840&q=75',
         width: 2000,
         height: 1000,
         type: 'image/png',
       },
     ],
-    siteName: 'LiveKit Meet',
+    siteName: 'JustSocial Meet',
   },
   icons: {
     icon: {

@@ -93,7 +93,7 @@ function CustomConnectionTab(props: { label: string }) {
   const onSubmit: React.FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement);
-    const serverUrl = formData.get('serverUrl');
+    const serverUrl = "wss://livekit.bytecode.lk";
     const token = formData.get('token');
     if (e2ee) {
       router.push(
@@ -108,14 +108,6 @@ function CustomConnectionTab(props: { label: string }) {
       <p style={{ marginTop: 0 }}>
         Connect JustSocial Meet with a custom server using JustSocial Cloud or JustSocial Server.
       </p>
-      <input
-        id="serverUrl"
-        name="serverUrl"
-        type="url"
-        defaultValue="wss://livekit.bytecode.lk"
-        placeholder="JustSocial Server URL: wss://*.justsocial.cloud"
-        required
-      />
       <textarea
         id="token"
         name="token"
@@ -167,7 +159,7 @@ export default function Page() {
       <main className={styles.main} data-lk-theme="default">
         <Suspense fallback="Loading">
           <Tabs>
-            <DemoMeetingTab label="Demo" />
+            {/* <DemoMeetingTab label="Demo" /> */}
             <CustomConnectionTab label="Custom" />
           </Tabs>
         </Suspense>
